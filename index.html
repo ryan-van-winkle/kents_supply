@@ -22,17 +22,96 @@
 		<title>Kent's Supply Center</title>
 	</head>
 	<body>
-		<div class="container">
-			<header>
+		
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="https://www.kentssupply.com/">
+					<img src="img/logo.png" height="40px"/>
+				</a>
+				<!--Navbar Hamburger Button-->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!--Navbar Links to Collapse into Hamburger Menu-->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<!--Links to the left of navbar-->
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="https://www.kentssupply.com/">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.kentssupply.com/products.html">Products</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.kentssupply.com/millwork.html">Millwork</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.kentssupply.com/history.html">History</a>
+						</li>
+					</ul>
+					<!--Links to the right of navbar-->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<button class="btn btn-indigo btn-sm" type="button" data-toggle="popover-hover">
+								<i class="fas fa-envelope"></i> Contact Us
+							</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<main>
+			<div class="view">
+			  <img src="img/banner.jpg" class="img-fluid" alt="background banner">
+			  <div class="mask flex-center waves-effect waves-light rgba-black-strong">
+				<h1 class="h1-responsive white-text">Step into the past and build your future. <br>Visit Kent's Supply Center!</h1>
+			  </div>
+			</div>
 			
-			</header>
-			<main>
-				<button class="btn btn-primary">Test</button>
-			</main>
-			<footer>
+			<div class="jumbotron text-center bg-light">
+				<h1 class="h1-responsive">Oldest Retailer in Nevada</h1>
+				<h3 class="h3-responsive"><i class="fas fa-phone-alt indigo-text"></i> (775) 423-2126</h3>
+			</div>
 			
-			</footer>
-		</div>
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-12 col-md-4">
+						<div class="card mb-4">
+							<div class="card-header">
+								<i class="far fa-thumbs-up fa-2x indigo-text"></i>
+							</div>
+							<div class="card-body">
+								<h2 class="h2-responsive">Quality</h2>
+								<p>Kent's Supply Center carries a wide variety of tools, hardware, and feed as well as our quality lumber. Give us a call and see what Kent's can do for you.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card mb-4">
+							<div class="card-header">
+								<i class="fas fa-user-tie fa-2x indigo-text"></i>
+							</div>
+							<div class="card-body">
+								<h2 class="h2-responsive">Professional</h2>
+								<p>Our staff are professional and knowledgable. We are ready to help you with all of your building needs. We cater to our Contractors and the DIY'er.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="card mb-4">
+							<div class="card-header">
+								<i class="fas fa-truck fa-2x indigo-text"></i>
+							</div>
+							<div class="card-body">
+								<h2 class="h2-responsive">Delivery</h2>
+								<p>We offer professional job site delivery</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 		
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/popper.min.js"></script>
