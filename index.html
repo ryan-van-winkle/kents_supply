@@ -21,11 +21,11 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 		<title>Kent's Supply Center</title>
 	</head>
-	<body>
+	<body id="home">
 		
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand" href="https://www.kentssupply.com/">
+			<nav class="navbar navbar-expand-lg navbar-light" id="navigation">
+				<a class="navbar-brand">
 					<img src="img/logo.png" height="40px"/>
 				</a>
 				<!--Navbar Hamburger Button-->
@@ -37,16 +37,16 @@
 					<!--Links to the left of navbar-->
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="https://www.kentssupply.com/">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://www.kentssupply.com/products.html">Products</a>
+							<a class="nav-link" href="#products">Products</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://www.kentssupply.com/millwork.html">Millwork</a>
+							<a class="nav-link" href="#history">History</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://www.kentssupply.com/history.html">History</a>
+							<a class="nav-link" href="#millwork">Millwork</a>
 						</li>
 					</ul>
 					<!--Links to the right of navbar-->
@@ -74,7 +74,7 @@
 				<h3 class="h3-responsive"><i class="fas fa-phone-alt indigo-text"></i> (775) 423-2126</h3>
 			</div>
 			
-			<div class="container">
+			<div class="container" data-spy="scroll" data-target="#navigation" data-offset="0">
 				<div class="row text-center">
 					<div class="col-12 col-md-4">
 						<div class="card mb-4">
@@ -90,17 +90,6 @@
 					<div class="col-12 col-md-4">
 						<div class="card mb-4">
 							<div class="card-header">
-								<i class="fas fa-user-tie fa-2x indigo-text"></i>
-							</div>
-							<div class="card-body">
-								<h2 class="h2-responsive">Professional</h2>
-								<p>Our staff are professional and knowledgable. We are ready to help you with all of your building needs. We cater to our Contractors and the DIY'er.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-md-4">
-						<div class="card mb-4">
-							<div class="card-header">
 								<i class="fas fa-truck fa-2x indigo-text"></i>
 							</div>
 							<div class="card-body">
@@ -109,11 +98,178 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-12 col-md-4">
+						<div class="card mb-4">
+							<div class="card-header">
+								<i class="fas fa-user-tie fa-2x indigo-text"></i>
+							</div>
+							<div class="card-body">
+								<h2 class="h2-responsive">Professional</h2>
+								<p>Our staff are professional and knowledgable. We are ready to help you with all of your building needs. We cater to our Contractors and the DIY'er.</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="row">
-					
+
+				<div class="row" id="products">
+					<div class="col-12 col-md-12">
+						<h1 class="h1-responsive my-4 text-center">Products</h1>
+						<hr class="my-4" />
+
+						<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-1z" data-slide-to="1"></li>
+								<li data-target="#carousel-example-1z" data-slide-to="2"></li>
+								<li data-target="#carousel-example-1z" data-slide-to="3"></li>
+								<li data-target="#carousel-example-1z" data-slide-to="4"></li>
+								<li data-target="#carousel-example-1z" data-slide-to="5"></li>
+								<li data-target="#carousel-example-1z" data-slide-to="6"></li>
+								<li data-target="#carousel-example-1z" data-slide-to="7"></li>
+							</ol>
+							<div class="carousel-inner" role="listbox">
+								<div class="carousel-item active">
+									<div class="view">
+										<img class="d-block w-100" src="img/carousel/lumber-supplies.jpg" alt="First slide">
+										<div class="mask flex-center waves-effect waves-light rgba-black-strong">
+											<div class="carousel-caption d-none d-md-block">
+												<h3 class="h3-responsive">Lumber and Supplies</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="view">
+										<img class="d-block w-100" src="img/carousel/doors-windows.jpg" alt="Second slide">
+										<div class="mask flex-center waves-effect waves-light rgba-black-strong">
+											<div class="carousel-caption d-none d-md-block">
+												<h3 class="h3-responsive">Doors and Windows</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="view">
+										<img class="d-block w-100" src="img/carousel/concrete-supplies.jpg" alt="Third slide">
+										<div class="mask flex-center waves-effect waves-light rgba-black-strong">
+											<div class="carousel-caption d-none d-md-block">
+												<h3 class="h3-responsive">Concrete Supplies</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="view">
+										<img class="d-block w-100" src="img/carousel/landscaping-fencing.jpg" alt="Fourth slide">
+										<div class="mask flex-center waves-effect waves-light rgba-black-strong">
+											<div class="carousel-caption d-none d-md-block">
+												<h3 class="h3-responsive">Landscaping and Fencing</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="view">
+										<img class="d-block w-100" src="img/carousel/fasteners-connectors.jpg" alt="Fith slide">
+										<div class="mask flex-center waves-effect waves-light rgba-black-strong">
+											<div class="carousel-caption d-none d-md-block">
+												<h3 class="h3-responsive">Fasteners and Connectors</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="view">
+										<img class="d-block w-100" src="img/carousel/roofing-material.jpg" alt="Sixth slide">
+										<div class="mask flex-center waves-effect waves-light rgba-black-strong">
+											<div class="carousel-caption d-none d-md-block">
+												<h3 class="h3-responsive">Roofing Material</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="view">
+										<img class="d-block w-100" src="img/carousel/hardware-tools.jpg" alt="Seventh slide">
+										<div class="mask flex-center waves-effect waves-light rgba-black-strong">
+											<div class="carousel-caption d-none d-md-block">
+												<h3 class="h3-responsive">Hardware and Tools</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="view">
+										<img class="d-block w-100" src="img/carousel/animal-feed.jpg" alt="Eighth slide">
+										<div class="mask flex-center waves-effect waves-light rgba-black-strong">
+											<div class="carousel-caption d-none d-md-block">
+												<h3 class="h3-responsive">Animal Feed</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+					</div>
 				</div>
-			</div>
+				
+				<div class="row mt-4">
+					<div class="col-12 col-md-12">
+						<p id="product_description">test</p>
+						<table>
+							<tbody>
+								<tr>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<div class="row" id="history">
+					<div class="col-12 col-md-12">
+						<h1 class="h1-responsive my-4 text-center">Our History</h1>
+						<hr class="my-4" />
+						<img width="250px" class="mr-3" style="float: left;" src="img/ih-kent.png" />
+						<p>Ira Heber Kent (I.H.) settled in Churchill County in 1876. Since that time, members of his family have been active in local business and community affairs. In the spring of 1892, Mr. Kent opened his mercantile business in Stillwater, which was the county seat for Churchill County. In 1906, Mr. Kent was the county treasurer when the seat was moved to Fallon. Not wanting to be far from his business, Mr. Kent put the store on skids drawn by horses and followed the county records to their new location.</p>
+						<p>The heavy mining and increased agricultural activity in the area helped Mr. Kent build his mercantile business into one of the largest in Nevada. He gave farmers credit for one year and at harvest time the store accepted the farmers’ crops – hay, turkeys, and other products – as payment. This year Kent’s Supply Center, Inc., formerly known as the I.H. Kent Company, celebrates 125 years of business.</p>
+						<p>Kent’s Supply Center, Inc. continues to be a family owned and operated business. Today Karla Kent operates the business with the same philosophy as her dad Thomas, his dad Ira L., and his dad Ira H: deep roots in the community, commitment to our neighbors and being fair to our customers.</p>
+						<p>The vision for Kent’s Supply Center is to continue our deep rooted traditions of serving our customers as neighbors with the highest level of service and quality products at a competitive price, as well as adapting to the times by utilizing technology suited for our industry.</p>
+						<p>The entire Kent’s Team would like to thank all our customers for the support and friendship shown to Kent’s Supply Center over the years. We look forward to serving our current and new customers into the future with the highest level of service and trust.</p>
+					</div>
+				</div>
+				
+				<div class="row" id="millwork">
+					<div class="col-12 col-md-12">
+						<h1 class="h1-responsive my-4 text-center">Millwork</h1> 
+						<hr class="my-4" />
+						<img width="200 px" class="mr-3" style="float: left;" src="img/millwork.jpg" />
+						<p>Whatever your door needs, residential or commercial, we can handle any custom or stock interior or exterior door.</p>
+						<p>Kent's Supply Center's Millwork Operators are focused on speed and quality control. Our door shop is equipped to handle your doors with precision and consistency.</p>
+						<p>In addition to doors, we handle all door moldings, base boards, shelving material, and hardware. No job is too large or small. Contact us today to see what we can do for you.</p>
+					</div>
+				</div>
+				<div class="row mb-5">
+					<div class="col-12 col-md-12">
+						<hr/>
+					</div>
+				</div>
+			</div>		
 		</main>
 		
 		<footer class="bg-dark text-center text-white">
@@ -156,10 +312,11 @@
 				<a class="text-white" href="https://www.kentssupply.com/">KentsSupply.com</a>
 			</div>
 		</footer>
-		
+
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/popper.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/mdb.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
