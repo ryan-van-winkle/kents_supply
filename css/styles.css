@@ -4,4 +4,16 @@ html {
 
 body::-webkit-scrollbar{
     display: none;
-  }
+}
+
+.carousel-caption .container .row .col-3 p {
+	text-shadow: 2px 2px 2px black;
+}
+
+.carousel-caption .container .row .col-4 p {
+	text-shadow: 2px 2px 2px black;
+}
+
+.carousel-caption .h3-responsive {
+	text-shadow: 2px 2px 2px black;
+}
