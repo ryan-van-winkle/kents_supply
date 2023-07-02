@@ -17,3 +17,8 @@ body::-webkit-scrollbar{
 .carousel-caption .h3-responsive {
 	text-shadow: 2px 2px 2px black;
 }
+
+.navbar-toggler:hover {
+	transform: rotateY(360deg);
+	transition: 0.5s;
+}
